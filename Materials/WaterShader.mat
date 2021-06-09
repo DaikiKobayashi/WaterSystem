@@ -53,6 +53,7 @@ Material:
     - _Distortion: 0.05
     - _DistortionPower: 0.25
     - _Float1: 10
+    - _NormalPower: 1.5
     - _NormalScale: 0.15
     - _Normal_Strength: 0.35
     - _Smoothness: 0.9
