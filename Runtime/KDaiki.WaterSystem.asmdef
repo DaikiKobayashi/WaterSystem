@@ -1,0 +1,16 @@
+{
+    "name": "KDaiki.WaterSystem",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ba3a536bbdd402440a0cf599f25d2b7d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

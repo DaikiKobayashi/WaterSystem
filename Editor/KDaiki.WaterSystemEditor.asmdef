@@ -1,0 +1,19 @@
+{
+    "name": "KDaiki.WaterSystemEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9eb6cbf383d347e499d4b6fdd8e2a325",
+        "GUID:ba3a536bbdd402440a0cf599f25d2b7d"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
