@@ -28,28 +28,34 @@ namespace KDaili.WaterSystem
             EditorGUILayout.LabelField(Title_Label, Title_LabelStyle, GUILayout.Height(40));
             EditorGUILayout.Space(1);
 
-            using (new GUILayout.VerticalScope(GUI.skin.box))
-            {
-                var waterColor = serializedObject.FindProperty("waterParameter");
-                EditorGUILayout.PropertyField(waterColor, true);
-                EditorGUI.indentLevel++;
-                if (waterColor.objectReferenceValue != null)
-                {
-                    CreateEditor((WaterParameter)waterColor.objectReferenceValue).OnInspectorGUI();
-                }
-                EditorGUI.indentLevel--;
-            }
+            var isDevelop = serializedObject.FindProperty("develop");
+            EditorGUILayout.PropertyField(isDevelop, true);
 
-            GUILayout.Space(5);
-
-            using (new GUILayout.HorizontalScope())
+            if (!_target.develop)
             {
-                if (GUILayout.Button("Writeing Gradient Texture", GUILayout.Height(25)))
+                using (new GUILayout.VerticalScope(GUI.skin.box))
                 {
-                    var filePath = EditorUtility.SaveFilePanel("Save", "Assets", "name", "png");
-                    if (!string.IsNullOrEmpty(filePath))
+                    var waterColor = serializedObject.FindProperty("waterParameter");
+                    EditorGUILayout.PropertyField(waterColor, true);
+                    EditorGUI.indentLevel++;
+                    if (waterColor.objectReferenceValue != null)
                     {
-                        _target.WriteGradientTexture(filePath);
+                        CreateEditor((WaterParameter)waterColor.objectReferenceValue).OnInspectorGUI();
+                    }
+                    EditorGUI.indentLevel--;
+                }
+
+                GUILayout.Space(5);
+
+                using (new GUILayout.HorizontalScope())
+                {
+                    if (GUILayout.Button("Writeing Gradient Texture", GUILayout.Height(25)))
+                    {
+                        var filePath = EditorUtility.SaveFilePanel("Save", "Assets", "name", "png");
+                        if (!string.IsNullOrEmpty(filePath))
+                        {
+                            _target.WriteGradientTexture(filePath);
+                        }
                     }
                 }
             }

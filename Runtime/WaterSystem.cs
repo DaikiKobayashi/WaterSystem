@@ -39,6 +39,8 @@ namespace KDaili.WaterSystem
         [SerializeField]
         private WaterResources resources;
 
+        public bool develop = false;
+
         private void OnEnable()
         {
             // コールバックに追加
@@ -54,6 +56,8 @@ namespace KDaili.WaterSystem
 
         public void Init()
         {
+            if (develop == true) return;
+
             AppendShaderPropertys();
 
             m_WaterGradientTexture = CreateGradientTexture2D(waterParameter._WaterGradientColor);
