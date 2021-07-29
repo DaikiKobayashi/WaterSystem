@@ -48,16 +48,19 @@ Material:
     - Vector1_F0687C93: 0.346
     - _AlphaCutoff: 0.5
     - _Depth: 1
-    - _DepthDistance: 15
+    - _DepthDistance: 10
     - _Displacement: 1
     - _Distortion: 0.05
+    - _DistortionDepthPower: 2.21
     - _DistortionPower: 0.25
     - _Float1: 10
+    - _NormalDepthPower: 3
     - _NormalPower: 1.5
     - _NormalScale: 0.15
     - _Normal_Strength: 0.35
-    - _Smoothness: 0.9
+    - _Smoothness: 0.75
     - _SmoothnessPower: 1
+    - _SmoothnessStrength: 0.5
     - _Strength: 0.19
     - _WaterColorBlend: 1
     - _WaterDepth: 0
