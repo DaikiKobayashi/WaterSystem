@@ -52,7 +52,7 @@ Material:
     - _Displacement: 1
     - _Distortion: 0.05
     - _DistortionDepthPower: 2.21
-    - _DistortionPower: 0.25
+    - _DistortionPower: 0.1
     - _Float1: 10
     - _NormalDepthPower: 3
     - _NormalPower: 1.5
